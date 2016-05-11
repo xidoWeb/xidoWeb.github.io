@@ -1,0 +1,34 @@
+//site_menu.scss
+// plug-in  cssfier
+#site_menu{position: relative; overflow: hidden;
+    >div{background-image:url("../img/index/menu_cover.jpg");
+        background-size:cover; background-repeat:no-repeat;}
+}//#site_menu
+#site_left {width:30%; height:100%; float:left; 
+    background-position: 0 0;
+}
+#site_right {width:70%; height:100%; float:left; 
+    background-color:#fac; transition:all 0.5s ease-in-out;
+    position: absolute; top: 0; right: 0;z-index: 100;
+    background-position: 30% 0;
+    &.moveBox{margin-right:-70% !important;}
+}//#site_right
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+#banner {
+  position: relative;
+}
+
+#banner > a {
+  width: 24px;
+  height: 40px;
+  background-color: #f77;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  z-index: 500;
+}
+
+#banner .left_btn {
+  left: 5px;
+}
+
+#banner .left_btn:hover {
+  background-color: #77f;
+}
+
+#banner .right_btn {
+  right: 5px;
+}
+
+#banner .right_btn:hover {
+  background-color: #77f;
+}
+
+#banner .round_btn {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+#banner li {
+  width: 10px;
+  height: 10px;
+  float: left;
+  margin-right: 10px;
+  background-color: #afa;
+}
+
+#banner li:last-child {
+  margin-right: 0;
+}
+
+#banner .banner_box {
+  width: 400%;
+  height: 100%;
+  margin-left: -100%;
+}
+
+#banner .banner_box > li {
+  width: calc(100% / 4);
+  height: 100%;
+  float: left;
+}

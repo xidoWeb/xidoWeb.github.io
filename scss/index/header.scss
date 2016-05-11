@@ -1,0 +1,51 @@
+//  header.scss
+h1 {width: 314px; height: 40px;
+    margin-top:15px;     margin-left:10px; float: left;
+    .link {background-image: url("../img/index/header/h1_logo.png");
+              background-position: center center;
+              background-repeat:no-repeat;
+        &:hover{
+        }
+    }
+    span {
+    }
+}
+#header_menu{width:140px; height:70px; float: right;}
+    #login {width: 70px; height: 70px; background-color: #fff;  float:left;        
+        dt {width: 100%; height: 100%; 
+            position: relative; z-index: 100;
+            background-image: url("../img/index/header/people.png");
+            background-position: center center;
+            background-repeat:no-repeat;cursor:pointer;
+
+        }
+        dd {width: 406px; height: 50px; background-color: #5ff;
+            margin-left: -410px; margin-top: -60px;
+            display: none;
+        }
+    }
+    #gnb {width: 70px; height: 70px; background-color: #aaf; float: right; position: relative; z-index: 200;
+        h2 {width: 100%; height: 100%; cursor:pointer;
+            background-image: url("../img/index/header/menubtn.png");
+            background-color:#000;
+            background-position: center center;
+            background-repeat:no-repeat;
+    &.move{background-image: url("../img/index/header/closs_menu.png");}
+        }
+        .menu {
+            width: 200px; height: 300px; background-color: #000;
+            margin-left:70px;
+            &.move{margin-left:-130px;}            
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+//
