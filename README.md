@@ -1,7 +1,5 @@
 # 2016_06_08 포트폴리오 최종 발표
-<style>
-  a{color:#0af; font-weight:bold;}  
-</style>
+
 
 1. [간은선 사이트 바로가기](http://kaneunsun.github.io/)
 1. [김지선 사이트 바로가기](http://kimjs9105.github.io/)
