@@ -1,4 +1,4 @@
-# GRUNT 
+# GRUNT 이해하기
 grunt란?javascript task runner로 javascript build tool,
 할수있는 일: concatenating, minifying, validating 등등등
 유사 툴로는 gulp가 있다.(현재는 gulp로 바뀌는 추세)
