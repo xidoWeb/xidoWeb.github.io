@@ -1,0 +1,459 @@
+@charset "UTF-8";
+.link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.link > span {
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.hidden {
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#wrap > header, #wrap > section, #wrap > footer {
+  width: 100%;
+}
+
+#wrap #all_header {
+  height: 70px;
+  background-color: rgba(0, 136, 153, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 1s;
+}
+
+#wrap #all_header:hover {
+  background-color: #008899;
+}
+
+#wrap #movie {
+  height: 500px;
+  border-bottom: 1px solid #333;
+  background-image: url("../img/index/movie.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#wrap #banner {
+  height: 500px;
+  border-bottom: 1px solid #333;
+  background-image: url("../img/index/banner_01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #86cccc;
+  background-attachment: fixed;
+}
+
+#wrap #site_menu {
+  height: 500px;
+  border-bottom: 1px solid #333;
+  background-image: url("../img/index/menu_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+#wrap #community {
+  height: 500px;
+  border-bottom: 1px solid #333;
+  background-image: url("../img/index/community_04.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#wrap #all_footer {
+  height: 190px;
+  background-color: #089;
+}
+
+h1 {
+  width: 314px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 10px;
+  float: left;
+}
+
+h1 .link {
+  background-image: url("../img/index/header/h1_logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#header_menu {
+  width: 140px;
+  height: 70px;
+  float: right;
+}
+
+#login {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  float: left;
+}
+
+#login dt {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+  background-image: url("../img/index/header/people.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#login dd {
+  width: 406px;
+  height: 50px;
+  background-color: #5ff;
+  margin-left: -410px;
+  margin-top: -60px;
+  display: none;
+}
+
+#gnb {
+  width: 70px;
+  height: 70px;
+  background-color: #aaf;
+  float: right;
+  position: relative;
+  z-index: 200;
+}
+
+#gnb h2 {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-image: url("../img/index/header/menubtn.png");
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#gnb h2.move {
+  background-image: url("../img/index/header/closs_menu.png");
+}
+
+#gnb .menu {
+  width: 200px;
+  height: 300px;
+  background-color: #000;
+  margin-left: 70px;
+}
+
+#gnb .menu.move {
+  margin-left: -130px;
+}
+
+#movie {
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+
+.movie_btn {
+  width: 110px;
+  height: 40px;
+  background-color: #fff;
+  padding: 10px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: 100;
+}
+
+.movie_btn li {
+  width: 40px;
+  height: 100%;
+}
+
+.movie_btn li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.movie_btn li > a > span {
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.movie_btn li:nth-child(1) {
+  float: left;
+}
+
+.movie_btn li:nth-child(2) {
+  float: right;
+}
+
+#banner {
+  overflow: hidden;
+  position: relative;
+  /*cmyk 
+    rgba  red, green, blue, alpha
+    #000000
+    hsla  hue(360deg), saturation(0%~100%), light(0~100%), alpha
+     opacity:0.5; */
+}
+
+#banner > .banner_btn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#banner > .banner_btn > li {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  z-index: 10;
+}
+
+#banner > .banner_btn > li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 3px solid #567;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+#banner > .banner_btn > li > a > span {
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+#banner > .banner_btn > li.left_btn {
+  left: 30px;
+}
+
+#banner > .banner_btn > li.left_btn > a {
+  transform: rotate(135deg);
+}
+
+#banner > .banner_btn > li.right_btn {
+  right: 30px;
+}
+
+#banner > .banner_btn > li.right_btn > a {
+  transform: rotate(-45deg);
+}
+
+#banner .banner_box {
+  width: calc(100% * 4);
+  height: 100%;
+  margin-left: -100%;
+}
+
+#banner .banner_box li {
+  width: calc(100% / 4);
+  height: 100%;
+  float: left;
+}
+
+#banner .banner_box li.box_01 {
+  background-color: #aff;
+}
+
+#banner .banner_box li.box_02 {
+  background-color: #afc;
+}
+
+#banner .banner_box li.box_03 {
+  background-color: #faa;
+}
+
+#banner .banner_box li.box_04 {
+  background-color: #fa0;
+}
+
+#community i {
+  font-size: 3em;
+  color: #089;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+  transition: all 1s;
+  width: 100%;
+  height: 100%;
+  display: block;
+  animation: daaaa 10s infinite;
+  /* 
+벤더프리픽스 : 아직 정식으로 승인이 되지않은 속성들을 
+        브라우저가 지원하는선에서 강제로 실행시키도록 만드는것
+        -webkit-  : 사파리, 크롬, 스윙
+        -moz- : 파이어폭스
+        -ms- : 익스플로러
+        -o- : 오페라
+        -epub- : 전자책
+        
+          -webkit-animation:daaaa 10s infinite;
+          -moz-animation:daaaa 10s infinite;
+          -ms-animation:daaaa 10s infinite;
+          -o-animation:daaaa 10s infinite;
+          -epub-animation:daaaa 10s infinite;
+          animation:daaaa 10s infinite;
+        
+        */
+}
+
+@-webkit-keyframes daaaa {
+  0% {
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(840deg);
+    color: #fa6;
+  }
+}
+
+@-moz-keyframes daaaa {
+  0% {
+  }
+  50% {
+    -moz-transform: rotate(360deg);
+  }
+  100% {
+    -moz-transform: rotate(840deg);
+    color: #fa6;
+  }
+}
+
+@-ms-keyframes daaaa {
+  #community 50% {
+    -ms-transform: rotate(360deg);
+  }
+  #community 100% {
+    -ms-transform: rotate(840deg);
+    color: #fa6;
+  }
+}
+
+@-o-keyframes daaaa {
+  0% {
+  }
+  50% {
+    -o-transform: rotate(360deg);
+  }
+  100% {
+    -o-transform: rotate(840deg);
+    color: #fa6;
+  }
+}
+
+@-webkit-keyframes daaaa {
+  0% {
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(840deg);
+    color: #fa6;
+  }
+}
+
+#community #com_01 {
+  width: 80%;
+  height: 50px;
+  background-color: #fff;
+  margin-left: 10%;
+  margin-top: 20px;
+  float: left;
+  /* margin-top을 사용할경우 감싸고있는 태그까지 같이 내려오는 경우가 많습니다. 
+        해결하는 방법은 : 
+            1- 감싸는 태그에서 padding-top를 사용
+            2- 해당태그에서 float
+        */
+}
+
+#community #com_01:hover > i {
+  opacity: 1;
+  transform: scale(2);
+}
+
+#community #com_02 {
+  width: 40%;
+  height: 120px;
+  background-color: #fff;
+  margin-left: 10%;
+  margin-top: 20px;
+  float: left;
+}
+
+#community #com_02 > i {
+  line-height: 120px;
+}
+
+#community #com_02:hover > i {
+  opacity: 1;
+}
+
+#site_menu {
+  position: relative;
+  overflow: hidden;
+}
+
+#site_menu > div {
+  background-image: url("../img/index/menu_cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#site_left {
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-position: 0 0;
+}
+
+#site_right {
+  width: 70%;
+  height: 100%;
+  float: left;
+  background-color: #fac;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-position: 30% 0;
+}
+
+#site_right.moveBox {
+  margin-right: -70% !important;
+}

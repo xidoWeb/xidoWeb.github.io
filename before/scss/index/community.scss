@@ -1,0 +1,77 @@
+// community.scss
+#community{
+    i{font-size:3em; color:$main; text-align: center;
+        line-height: 50px; opacity:0; transition:all 1s; 
+        width: 100%; height: 100%; display: block;
+//        animation:이름 시간 액션(함수) 지연 반복 방향;
+        animation:daaaa 10s infinite;
+// 애니매이션 종류   jquery=>  animate, css3=> transition, animation   
+/* 
+벤더프리픽스 : 아직 정식으로 승인이 되지않은 속성들을 
+        브라우저가 지원하는선에서 강제로 실행시키도록 만드는것
+        -webkit-  : 사파리, 크롬, 스윙
+        -moz- : 파이어폭스
+        -ms- : 익스플로러
+        -o- : 오페라
+        -epub- : 전자책
+        
+          -webkit-animation:daaaa 10s infinite;
+          -moz-animation:daaaa 10s infinite;
+          -ms-animation:daaaa 10s infinite;
+          -o-animation:daaaa 10s infinite;
+          -epub-animation:daaaa 10s infinite;
+          animation:daaaa 10s infinite;
+        
+        */
+    }
+    @-webkit-keyframes daaaa {
+        0%{}
+        50%{-webkit-transform:rotate(360deg)}
+        100%{-webkit-transform:rotate(840deg); color:#fa6; }
+    }
+       @-moz-keyframes daaaa {
+        0%{}
+        50%{-moz-transform:rotate(360deg)}
+        100%{-moz-transform:rotate(840deg); color:#fa6; }
+    }
+       @-ms-keyframes daaaa {
+        0%{}
+        50%{-ms-transform:rotate(360deg)}
+        100%{-ms-transform:rotate(840deg); color:#fa6; }
+    }
+       @-o-keyframes daaaa {
+        0%{}
+        50%{-o-transform:rotate(360deg)}
+        100%{-o-transform:rotate(840deg); color:#fa6; }
+    }
+       @-webkit-keyframes daaaa {
+        0%{}
+        50%{-webkit-transform:rotate(360deg)}
+        100%{-webkit-transform:rotate(840deg); color:#fa6; }
+    }
+    
+    
+    #com_01 {
+        width: 80%; height: 50px; background-color: #fff; 
+        margin-left:10%; margin-top: 20px;  float:left;
+        &:hover > i{opacity:1; transform:scale(2);}
+    /* margin-top을 사용할경우 감싸고있는 태그까지 같이 내려오는 경우가 많습니다. 
+        해결하는 방법은 : 
+            1- 감싸는 태그에서 padding-top를 사용
+            2- 해당태그에서 float
+        */
+    }
+    #com_02 {
+        width:40%; height:120px; background-color: #fff;
+        margin-left:10%; margin-top:20px; float:left; 
+        >i{line-height: 120px;}
+        &:hover > i{opacity:1}
+    }    
+}
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+//  all.scss
+$url:"../img/index/";
+#wrap {width: 100%; margin: 0 auto;
+    >header, >section, >footer{width: 100%;}
+    #all_header {height: 70px; background-color:rgba($main, 0.5);
+        position:fixed; top:0; left:0; z-index: 1000; 
+        transition:all 1s;
+        &:hover{background-color:rgba($main,1); }
+    }//#all_header
+    
+    #movie { height:500px; border-bottom:1px solid #333;
+        background-image: url($url + "movie.png");
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size:cover;
+    } // #movie
+    #banner { height:500px; border-bottom:1px solid #333;
+        background-image: url($url + "banner_01.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color:#86cccc;
+        background-attachment: fixed;
+    }
+    #site_menu { height:500px; border-bottom:1px solid #333;
+        background-image: url($url + "menu_bg.jpg");
+        background-repeat: no-repeat;
+        background-position:right center;
+        background-size: contain;
+    }
+    #community { height:500px; border-bottom:1px solid #333;
+        background-image: url($url + "community_04.jpg");
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size:cover;
+    }
+    #all_footer {height: 190px; background-color: $main;
+    }
+}//#wrap
+
+
+
+
+
+
+
+
